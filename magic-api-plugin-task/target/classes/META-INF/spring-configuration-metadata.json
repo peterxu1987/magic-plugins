@@ -1,0 +1,60 @@
+{
+  "groups": [
+    {
+      "name": "magic-api.task",
+      "type": "org.ssssssss.magicapi.task.starter.MagicTaskConfig",
+      "sourceType": "org.ssssssss.magicapi.task.starter.MagicTaskConfig"
+    },
+    {
+      "name": "magic-api.task.pool",
+      "type": "org.ssssssss.magicapi.task.starter.MagicTaskConfig$Pool",
+      "sourceType": "org.ssssssss.magicapi.task.starter.MagicTaskConfig",
+      "sourceMethod": "public org.ssssssss.magicapi.task.starter.MagicTaskConfig.Pool getPool() "
+    },
+    {
+      "name": "magic-api.task.shutdown",
+      "type": "org.ssssssss.magicapi.task.starter.MagicTaskConfig$Shutdown",
+      "sourceType": "org.ssssssss.magicapi.task.starter.MagicTaskConfig",
+      "sourceMethod": "public org.ssssssss.magicapi.task.starter.MagicTaskConfig.Shutdown getShutdown() "
+    }
+  ],
+  "properties": [
+    {
+      "name": "magic-api.task.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否启用定时任务",
+      "sourceType": "org.ssssssss.magicapi.task.starter.MagicTaskConfig"
+    },
+    {
+      "name": "magic-api.task.log",
+      "type": "java.lang.Boolean",
+      "description": "是否打印日志 @since 2.1.0",
+      "sourceType": "org.ssssssss.magicapi.task.starter.MagicTaskConfig"
+    },
+    {
+      "name": "magic-api.task.pool.size",
+      "type": "java.lang.Integer",
+      "description": "线程池大小",
+      "sourceType": "org.ssssssss.magicapi.task.starter.MagicTaskConfig$Pool"
+    },
+    {
+      "name": "magic-api.task.shutdown.await-termination",
+      "type": "java.lang.Boolean",
+      "description": "关闭时是否等待任务执行完毕，默认为false",
+      "sourceType": "org.ssssssss.magicapi.task.starter.MagicTaskConfig$Shutdown"
+    },
+    {
+      "name": "magic-api.task.shutdown.await-termination-period",
+      "type": "java.time.Duration",
+      "description": "关闭时最多等待任务执行完毕的时间",
+      "sourceType": "org.ssssssss.magicapi.task.starter.MagicTaskConfig$Shutdown"
+    },
+    {
+      "name": "magic-api.task.thread-name-prefix",
+      "type": "java.lang.String",
+      "description": "线程池前缀",
+      "sourceType": "org.ssssssss.magicapi.task.starter.MagicTaskConfig"
+    }
+  ],
+  "hints": []
+}

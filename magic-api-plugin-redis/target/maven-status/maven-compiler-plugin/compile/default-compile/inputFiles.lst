@@ -1,0 +1,12 @@
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\RedisHander.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\RedisModule.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\service\RedisMagicResourceStorage.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\RedisConsumerCallback.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\MapHander.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\starter\MagicRedisConfiguration.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\model\MagicDynamicRedisClient.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\RateLimiterCallback.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\service\RedisMagicDynamicRegistry.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\web\MagicRedisController.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\model\RedisInfo.java
+D:\api-os\magic-api-plugins\magic-api-plugin-redis\src\main\java\org\ssssssss\magicapi\redis\util\RedisUtil.java

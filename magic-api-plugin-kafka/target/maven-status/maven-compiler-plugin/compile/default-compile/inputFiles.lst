@@ -1,0 +1,10 @@
+D:\api-os\magic-api-plugins\magic-api-plugin-kafka\src\main\java\org\ssssssss\magicapi\kafka\KafkaModule.java
+D:\api-os\magic-api-plugins\magic-api-plugin-kafka\src\main\java\org\ssssssss\magicapi\kafka\model\MagicDynamicKafkaClient.java
+D:\api-os\magic-api-plugins\magic-api-plugin-kafka\src\main\java\org\ssssssss\magicapi\kafka\service\KafkaMagicDynamicRegistry.java
+D:\api-os\magic-api-plugins\magic-api-plugin-kafka\src\main\java\org\ssssssss\magicapi\kafka\KafkaSubscribeHander.java
+D:\api-os\magic-api-plugins\magic-api-plugin-kafka\src\main\java\org\ssssssss\magicapi\kafka\KafkaPublishHander.java
+D:\api-os\magic-api-plugins\magic-api-plugin-kafka\src\main\java\org\ssssssss\magicapi\kafka\model\KafkaInfo.java
+D:\api-os\magic-api-plugins\magic-api-plugin-kafka\src\main\java\org\ssssssss\magicapi\kafka\util\KafkaDataSource.java
+D:\api-os\magic-api-plugins\magic-api-plugin-kafka\src\main\java\org\ssssssss\magicapi\kafka\starter\MagicKafkaConfiguration.java
+D:\api-os\magic-api-plugins\magic-api-plugin-kafka\src\main\java\org\ssssssss\magicapi\kafka\web\MagicKafkaController.java
+D:\api-os\magic-api-plugins\magic-api-plugin-kafka\src\main\java\org\ssssssss\magicapi\kafka\service\KafkaMagicResourceStorage.java

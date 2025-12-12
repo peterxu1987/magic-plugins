@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 17
+Implementation-Title: magic-api-plugin-redis
+Implementation-Version: 2.2.2
+Created-By: Maven Integration for Eclipse
+

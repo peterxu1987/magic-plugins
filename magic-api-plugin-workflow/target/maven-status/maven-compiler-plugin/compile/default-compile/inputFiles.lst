@@ -1,0 +1,11 @@
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\model\MqttInfo.java
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\model\MagicDynamicMqttClient.java
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\util\MqttDataSource.java
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\util\HighConcurrencyMqttClient.java
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\service\MqttMagicDynamicRegistry.java
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\util\MqttSubscribeHandler.java
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\starter\MagicMqttConfiguration.java
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\web\MagicMqttController.java
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\util\MqttPublishHandler.java
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\MqttModule.java
+D:\api-os\magic-api-plugins\magic-api-plugin-mqtt\src\main\java\org\ssssssss\magicapi\mqtt\service\MqttMagicResourceStorage.java

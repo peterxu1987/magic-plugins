@@ -1,0 +1,13 @@
+<propertysets>
+    <propertyset name="jdbcTemplateSet" class="com.opensymphony.module.propertyset.database.JDBCTemplatePropertySet">
+        <arg name="table.name" value="OS_PROPERTYENTRY"/>
+        <arg name="col.globalKey" value="GLOBAL_KEY"/>
+        <arg name="col.itemKey" value="ITEM_KEY"/>
+        <arg name="col.itemType" value="ITEM_TYPE"/>
+        <arg name="col.string" value="STRING_VALUE"/>
+        <arg name="col.date" value="DATE_VALUE"/>
+        <arg name="col.data" value="DATA_VALUE"/>
+        <arg name="col.float" value="FLOAT_VALUE"/>
+        <arg name="col.number" value="NUMBER_VALUE"/>
+    </propertyset>
+</propertysets>

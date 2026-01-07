@@ -1,0 +1,62 @@
+CREATE TABLE `OS_WFENTRY` (
+  `ID` varchar(36) NOT NULL COMMENT '自动编号',
+  `NAME` varchar(20) DEFAULT NULL COMMENT '工作流名称',
+  `STATE` int(11) DEFAULT NULL COMMENT '工作流状态'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='工作流主表，存放工作流名称和状态';
+
+
+
+CREATE TABLE `OS_PROPERTYENTRY` (
+  `GLOBAL_KEY` varchar(255) NOT NULL COMMENT '全局关键字',
+  `ITEM_KEY` varchar(255) NOT NULL COMMENT '条目关键字',
+  `ITEM_TYPE` int(11) DEFAULT NULL COMMENT '条目类型',
+  `STRING_VALUE` varchar(255) DEFAULT NULL COMMENT '字符值',
+  `DATE_VALUE` date DEFAULT NULL COMMENT '日期值',
+  `DATA_VALUE` text COMMENT '数据值',
+  `FLOAT_VALUE` float DEFAULT NULL COMMENT '  浮点值',
+  `NUMBER_VALUE` decimal(65,0) DEFAULT NULL COMMENT '数字类型'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='属性表，存放临时变量';
+
+
+
+CREATE TABLE `OS_HISTORYSTEP_PREV` (
+  `ID` varchar(36) NOT NULL COMMENT '当前历史步骤编号',
+  `PREVIOUS_ID` varchar(36) NOT NULL COMMENT '前历史步骤编号'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='前历史步骤表，存放历史步骤和上一个步骤的关联数据';
+
+
+
+CREATE TABLE `OS_HISTORYSTEP` (
+  `ID` varchar(36) NOT NULL COMMENT '自动编号',
+  `ENTRY_ID` varchar(36) DEFAULT NULL COMMENT '工作流编号',
+  `STEP_ID` int(11) DEFAULT NULL COMMENT '步骤编号',
+  `ACTION_ID` int(11) DEFAULT NULL COMMENT '动作编号',
+  `OWNER` varchar(20) DEFAULT NULL COMMENT '步骤的所有者',
+  `START_DATE` date DEFAULT NULL COMMENT '开始时间',
+  `FINISH_DATE` date DEFAULT NULL COMMENT '结束时间',
+  `DUE_DATE` date DEFAULT NULL COMMENT '授权时间',
+  `STATUS` varchar(20) DEFAULT NULL COMMENT '状态',
+  `CALLER` varchar(20) DEFAULT NULL COMMENT ' 操作人员的帐号名称'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='历史步骤表，存放当前正在进行步骤的数据';
+
+
+
+CREATE TABLE `OS_CURRENTSTEP_PREV` (
+  `ID` varchar(36) NOT NULL COMMENT '当前步骤编号',
+  `PREVIOUS_ID` varchar(36) NOT NULL COMMENT '前步骤编号'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='前步骤表，存放当前步骤和上一个步骤的关联数据';
+
+
+
+CREATE TABLE `OS_CURRENTSTEP` (
+  `ID` varchar(36) NOT NULL COMMENT '自动编号',
+  `ENTRY_ID` varchar(36) DEFAULT NULL COMMENT '工作流编号',
+  `STEP_ID` int(11) DEFAULT NULL COMMENT '步骤编号',
+  `ACTION_ID` int(11) DEFAULT NULL COMMENT '动作编号',
+  `OWNER` varchar(20) DEFAULT NULL COMMENT '步骤的所有者',
+  `START_DATE` date DEFAULT NULL COMMENT '开始时间',
+  `FINISH_DATE` date DEFAULT NULL COMMENT '结束时间',
+  `DUE_DATE` date DEFAULT NULL COMMENT '授权时间',
+  `STATUS` varchar(20) DEFAULT NULL COMMENT '状态',
+  `CALLER` varchar(20) DEFAULT NULL COMMENT '操作人员的帐号名称'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='当前步骤表，存放当前正在进行步骤的数据';

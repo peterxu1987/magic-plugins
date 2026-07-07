@@ -1,5 +1,5 @@
 export default {
-    kafka:{
+    kafka: {
         title: 'Kafka',
         name: 'Kafka数据源',
         copySuccess: '复制{0}成功',
@@ -12,6 +12,7 @@ export default {
                 name: '数据源名称，仅做显示使用',
                 key: '数据源Key，后续代码中使用'
             },
+            type: '消息类型'
         }
     }
 }

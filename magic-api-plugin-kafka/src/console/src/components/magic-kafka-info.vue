@@ -7,13 +7,13 @@
 			   </div>
 			   <div class="magic-form-row">
 			      <label>key</label>
-			       <magic-input v-model:value="info.key" :placeholder="$i('kafka.form.placeholder.name')"/>
+			       <magic-input v-model:value="info.key" :placeholder="$i('kafka.form.placeholder.key')"/>
 			   </div>
 			   <div class="magic-form-row">
 			       <label>{{$i('kafka.form.type')}}</label>
 			       <magic-select inputable  @update:value="handleChange" v-model:value="info.type" width="100%" :options="constants.map(it => { return {text: it, value: it} })" :placeholder="$i('kafka.form.placeholder.type')"/>
 			   </div>
-			
+
 			   <div class="magic-form-row">
 			       <label>{{$i('datasource.form.other')}}</label>
 			       <magic-monaco-editor language="json" v-model:value="properties" style="height:150px"/>
@@ -54,7 +54,7 @@ const handleChange = (value) => {
     }
 
 }
- 
+
 watch(properties, (val) => {
 	try {
 		__props.info.properties = JSON.parse(val)

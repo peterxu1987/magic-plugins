@@ -12,20 +12,32 @@
 	<packaging>jar</packaging>
 	<name>magic-api-plugin-tcp</name>
 	<description>magic-api-plugin-tcp</description>
-	<dependencyManagement>
-		<dependencies>
-			<!-- Netty版本保持不变（与Spring Boot 3.2.6兼容） -->
-			<dependency>
-				<groupId>io.netty</groupId>
-				<artifactId>netty-bom</artifactId>
-				<version>4.1.93.Final</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+<!--	<dependencyManagement>-->
+<!--		<dependencies>-->
+<!--			&lt;!&ndash; Netty版本保持不变（与Spring Boot 3.2.6兼容） &ndash;&gt;-->
+<!--			<dependency>-->
+<!--				<groupId>io.netty</groupId>-->
+<!--				<artifactId>netty-bom</artifactId>-->
+<!--				<version>4.1.93.Final</version>-->
+<!--				<type>pom</type>-->
+<!--				<scope>import</scope>-->
+<!--			</dependency>-->
+<!--		</dependencies>-->
+<!--	</dependencyManagement>-->
 	<dependencies>
-		<dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.63.Final</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-resolver-dns-native-macos</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 			<scope>provided</scope>
@@ -35,7 +47,7 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>

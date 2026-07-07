@@ -7,7 +7,7 @@ export default function (bus, constants, $i, Message, request) {
         // 脚本语言
         language: 'magicscript',
         // 默认脚本
-        defaultScript: `return 'Hello tiga-api-task'`,
+        defaultScript: `return 'Hello magic-api-task'`,
         // 执行测试的逻辑
         doTest: (opened) => {
             opened.running = true
